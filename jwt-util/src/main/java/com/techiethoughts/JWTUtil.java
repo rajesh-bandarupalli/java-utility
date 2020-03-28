@@ -14,6 +14,11 @@ import java.util.Date;
 public class JWTUtil {
 
   private static final String ISSUER = "techiethoughts.com";
+  
+  /**
+   * secret should be configured as environment variable so, it can be replaced during the app
+   * deployment or container creation.
+   */
   private static final String SECRET = "SECRET_PASSWORD";
 
   /**
